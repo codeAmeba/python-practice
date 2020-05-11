@@ -32,16 +32,3 @@ robot = {
 
 robot["author"] = "Sooyoung"
 print(robot)
-
-# function -> 내장 함수가 많음, 문서 읽어볼 것
-print("Hello world!")
-print(len("abcdefg"))
-
-# custom function
-def say_hello():
-	print("hello")
-	print("bye")
-
-say_hello()
-
-# fuction arguments
