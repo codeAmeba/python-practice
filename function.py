@@ -33,3 +33,12 @@ r_result = r_plus(3, 6)
 
 print(p_result) # 9 None -> return이 없으므로 print를 두 번 실행, 그래서 두 번째 print는 None
 print(r_result) # 9
+
+# keyworded arguments
+# 순서에 상관없이 인수를 지정해줌
+def introduce_yourself(name, age):
+  return f"Hello my name is {name}, I'm {age} years old"
+
+introduce = introduce_yourself(name="Sooyoung", age="32")
+print(introduce)
+
