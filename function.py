@@ -28,10 +28,10 @@ def p_plus(a, b):
 def r_plus(a, b):
   return a + b
 
-p_result = p_plus(3, 6)
+# p_result = p_plus(3, 6)
 r_result = r_plus(3, 6)
 
-print(p_result) # 9 None -> return이 없으므로 print를 두 번 실행, 그래서 두 번째 print는 None
+# print(p_result) # 9 None -> return이 없으므로 print를 두 번 실행, 그래서 두 번째 print는 None
 print(r_result) # 9
 
 # keyworded arguments
