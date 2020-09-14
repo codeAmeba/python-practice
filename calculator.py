@@ -1,24 +1,24 @@
 def calculator(a, operator, b):
-  if type(a) != int or type(b) != int :
-    return "Please input only number."
+    if type(a) != int or type(b) != int:
+        return "Please input only number."
 
-  if operator == "plus":
-    return a + b
+    if operator == "plus":
+        return a + b
 
-  if operator == "minus":
-    return a - b
+    if operator == "minus":
+        return a - b
 
-  if operator == "multiply":
-    return a * b
+    if operator == "multiply":
+        return a * b
 
-  if operator == "division":
-    return a / b
+    if operator == "division":
+        return a / b
 
-  if operator == "reminder":
-	  return a % b
+    if operator == "reminder":
+        return a % b
 
-  if operator == "power":
-    return a ** b
+    if operator == "power":
+        return a ** b
 
 
 multiply6and7 = calculator(a="6", operator="multiply", b="7")
