@@ -1,1 +1,1 @@
-# python practice with nomad coders
+# python practice
