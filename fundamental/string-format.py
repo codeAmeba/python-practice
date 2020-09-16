@@ -36,4 +36,4 @@ url = "http://codeameba.netlify.app"
 removeHttp = url[7:]
 removeAfterFirstDot = removeHttp[:removeHttp.find('.')]
 makePassword = f"{removeAfterFirstDot[:3]}{len(removeAfterFirstDot)}{removeAfterFirstDot.count('e')}!"
-print(makePassword)
+print(makePassword)  # cod92!
