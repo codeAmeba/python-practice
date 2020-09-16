@@ -36,5 +36,7 @@ url = "http://codeameba.netlify.app"
 # removeHttp = url[7:]
 removeHttp = url.replace("http://", "")
 removeAfterFirstDot = removeHttp[:removeHttp.find('.')]
-makePassword = f"{removeAfterFirstDot[:3]}{len(removeAfterFirstDot)}{removeAfterFirstDot.count('e')}!"
-print(makePassword)  # cod92!
+# makePassword = f"{removeAfterFirstDot[:3]}{len(removeAfterFirstDot)}{removeAfterFirstDot.count('e')}!"
+makePassword = removeAfterFirstDot[:3] + str(
+    len(removeAfterFirstDot)) + str(removeAfterFirstDot.count('e')) + "!"
+print("{0}의 비밀번호는 [{1}]입니다.".format(url, makePassword))  # cod92!
