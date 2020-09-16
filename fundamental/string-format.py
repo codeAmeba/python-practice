@@ -33,7 +33,8 @@ print("Red\tApple")  # tab
 # 규칙3. 남은 글자 중 첫 세자리 + 글자 갯수 + 글자 내 e 갯수 + ! -> nav51!
 
 url = "http://codeameba.netlify.app"
-removeHttp = url[7:]
+# removeHttp = url[7:]
+removeHttp = url.replace("http://", "")
 removeAfterFirstDot = removeHttp[:removeHttp.find('.')]
 makePassword = f"{removeAfterFirstDot[:3]}{len(removeAfterFirstDot)}{removeAfterFirstDot.count('e')}!"
 print(makePassword)  # cod92!
