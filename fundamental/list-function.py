@@ -3,6 +3,9 @@
 fruits = ["apple", "grape", "melon"]
 print(fruits)
 
+# len은 리스트에서 사용 가능
+print(len(fruits))
+
 # melon은 몇 번째인가?
 print(fruits.index('melon'))
 
@@ -42,3 +45,9 @@ mixList = ['apple', 30, True]
 mixList2 = ['peach', 15, False]
 mixList.extend(mixList2)
 print(mixList)  # ['apple', 30, True, 'peach', 15, False]
+
+# 피보나치
+a, b = 0, 1
+while a < 10:
+    print(a)
+    a, b = b, a+b
