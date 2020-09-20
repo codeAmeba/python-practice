@@ -46,8 +46,15 @@ mixList2 = ['peach', 15, False]
 mixList.extend(mixList2)
 print(mixList)  # ['apple', 30, True, 'peach', 15, False]
 
+# https://docs.python.org/ko/3.7/tutorial/introduction.html#first-steps-towards-programming
 # 피보나치
 a, b = 0, 1
 while a < 10:
     print(a)
     a, b = b, a+b
+
+# 시퀀스(sequence) 자료형
+# 파이썬에서 '시퀀스'는 연속형 자료형을 말한다.
+# 대표적으로 튜플(tuple)과 리스트(list), 레인지(range), 문자열(string)이 있다.
+# 튜플은 데이터 자체를 수정하지 못 하지만, 리스트는 데이터를 자유롭게 수정할 수 있다는 차이가 있다.
+# 시퀀스 데이터는 인덱스를 갖고 있으며, 순회할 수 있다(iterable)
