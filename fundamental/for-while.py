@@ -25,3 +25,17 @@ person = "unknown"
 while person != customer:
     print("{0}, coffee is here".format(customer))
     person = input("what is your name? ")
+
+
+# 한줄 for문
+# students = [1, 2, 3, 4, 5]
+# students = [i + 100 for i in students]
+# print(students)
+
+# students = ["Ironman", "Hulk", "Thor", "Doctor Strange"]
+# students = [len(i) for i in students]
+# print(students)
+
+students = ["Ironman", "Hulk", "Thor", "Doctor Strange"]
+students = [i.upper() for i in students]
+print(students)
