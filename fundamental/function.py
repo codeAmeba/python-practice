@@ -54,3 +54,33 @@ def introduce_yourself(name, age):
 
 introduce = introduce_yourself(name="Sooyoung", age="32")
 print(introduce)
+
+
+def open_account():
+    print("계좌 생성")
+
+
+def deposit(balance, money):
+    print("입금 완료. 잔액은 {0}원입니다.".format(balance + money))
+    return balance + money
+
+
+def withdraw(balance, money):
+    if balance >= money:
+        print("출금 완료. 잔액은 {0}원입니다.".format(balance - money))
+        return balance - money
+    else:
+        print("잔액 부족. 잔액은 {0}원입니다.".format(balance))
+        return balance
+
+
+def withdraw_nigth(balance, money):
+    commission = 100
+    return commission, balance - money - commission
+
+
+balance = 0
+balance = deposit(balance, 2000)
+balance = withdraw(balance, 1000)
+commission, balance = withdraw_nigth(balance, 500)
+print("수수료 {0}원, 잔액 {1}원".format(commission, balance))
