@@ -84,3 +84,12 @@ balance = deposit(balance, 2000)
 balance = withdraw(balance, 1000)
 commission, balance = withdraw_nigth(balance, 500)
 print("수수료 {0}원, 잔액 {1}원".format(commission, balance))
+
+
+# default value
+def profile(name, age=24, main_lang="Pyhton"):
+    print("이름 : {0}\t 나이 : {1}\t주 사용 언어 : {2}".format(name, age, main_lang))
+
+
+profile("Faker", 25)
+profile("Cuzz")
