@@ -93,3 +93,12 @@ def profile(name, age=24, main_lang="Pyhton"):
 
 profile("Faker", 25)
 profile("Cuzz")
+
+
+# keyword value: 순서가 바뀌어도 상관 없음
+def profile(name, age, main_lang):
+    print(name, age, main_lang)
+
+
+profile(name="Faker", main_lang="Python", age=25)
+profile(main_lang="Java", age=24, name="Cuzz")
